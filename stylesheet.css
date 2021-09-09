@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    text-decoration:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*navbar styling*/
+.max
+{
+    max-width:1300px;
+    padding:0 80px;
+    margin: auto;
+}
+.navbar
+{   
+    position:fixed;
+    z-index:2;
+   
+    width:100%;
+    padding:15px 0;
+    background:whitesmoke;
+    font-family:Ubuntu,Josefin-sans, sans-serif;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 5px 6px -6px #999;
+    
+}
+.navbar .max
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.navbar .links a
+{   
+    color:grey;
+    font-size:18px;
+    font-weight:530;
+    margin-left:25px;
+    
+}
+.navbar .links a:hover
+{
+    color:black;
+    
+    transition:all 0.4s ease ;
+}
+
+/*catalog styling in home page*/
+.blogs
+{
+    padding: 100px 0;
+    font-family:poppins ;
+}
+.blogs .content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogs .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.blogs .content .card{
+    width: calc(33% - 20px);
+    background-color: whitesmoke;
+    text-decoration: none;
+    
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.blogs .content .card .box{
+    transition: all 0.3s ease;
+}
+.blogs .content .card:hover {
+    transform: scale(1.05);
+}
+.blogs .content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.blogs .content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.format{
+    display: flexbox;
+    flex-direction: row;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*individual catalog categories styling*/
+/*category heading and bar*/
+.genre
+{   justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    
+    margin: auto;
+
+    font-family:Roboto Mono,poppins ;
+    font-size: 30px;
+}
+.genreLine
+{   justify-content: center;
+    text-align: center;
+    padding: 148px 0;
+    
+    position: absolute;
+    left: 0;
+    right: 0;  
+    margin: auto;
+}
+/*category content*/
+
+
